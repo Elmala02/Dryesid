@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Award, ShieldCheck, Heart, Star } from 'lucide-react';
+import { Award, ShieldCheck, Heart, Star } from 'lucide-react';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
-import LuckyWheel from '../components/LuckyWheel';
 import './Home.css';
 
 const slides = [
@@ -178,10 +177,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ─── Lucky Wheel ─── */}
-      <LuckyWheel />
-
-      {/* ─── WhatsApp FAB ─── */}
+      {/* ─── WhatsApp FAB — derecha ─── */}
       <a href="https://wa.me/573224467275" target="_blank" rel="noopener noreferrer"
          className="whatsapp-fab">
         <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
