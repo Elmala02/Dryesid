@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './components/CartContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -12,23 +13,25 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="app-container">
-        <Navbar />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobre-el-doctor" element={<About />} />
-            <Route path="/procedimientos" element={<Procedures />} />
-            <Route path="/resultados" element={<Testimonials />} />
-            <Route path="/promociones" element={<Products />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contacto" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="app-container">
+          <Navbar />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sobre-el-doctor" element={<About />} />
+              <Route path="/procedimientos" element={<Procedures />} />
+              <Route path="/resultados" element={<Testimonials />} />
+              <Route path="/promociones" element={<Products />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contacto" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 

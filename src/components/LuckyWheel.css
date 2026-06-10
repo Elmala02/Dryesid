@@ -1,0 +1,185 @@
+/* Floating Action Button */
+.lucky-wheel-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  background-color: var(--color-gold);
+  color: var(--color-wine-dark);
+  border: none;
+  padding: 0.9rem 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(198, 165, 106, 0.4);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-gold);
+}
+
+.lucky-wheel-fab:hover {
+  transform: scale(1.05) translateY(-5px);
+  background-color: var(--color-primary);
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  box-shadow: 0 15px 30px rgba(109, 31, 42, 0.3);
+}
+
+/* Modal Overlay */
+.lucky-wheel-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(58, 13, 20, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.lucky-wheel-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--color-gold);
+}
+
+.close-wheel-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.close-wheel-btn:hover {
+  opacity: 1;
+}
+
+.lucky-wheel-modal h2 {
+  color: var(--color-white);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lucky-wheel-modal p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* Wheel Layout */
+.wheel-canvas-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto 2.5rem;
+}
+
+.wheel-marker {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 2rem;
+  color: var(--color-gold);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.wheel-canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: transform cubic-bezier(0.1, 0.8, 0.1, 1);
+  background-color: var(--color-primary);
+}
+
+.spin-btn {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Success View */
+.wheel-success-view {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prize-gift-icon {
+  color: var(--color-gold);
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.winning-prize-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  border-top: 1px dashed rgba(198, 165, 106, 0.4);
+  border-bottom: 1px dashed rgba(198, 165, 106, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prize-instruction {
+  margin-bottom: 2rem !important;
+}
+
+.claim-btn {
+  width: 100%;
+  max-width: 280px;
+}
+
+.close-btn-gold {
+  border-color: var(--color-gold);
+  color: var(--color-gold) !important;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 1rem;
+}
+
+.close-btn-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-wine-dark) !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+  .lucky-wheel-fab {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8rem;
+  }
+  .wheel-canvas-container {
+    width: 260px;
+    height: 260px;
+  }
+}
