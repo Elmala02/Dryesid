@@ -1,0 +1,77 @@
+.promotions-section {
+  padding: var(--section-padding);
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.promo-card {
+  background-color: var(--color-white);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: transform var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.promo-card.featured {
+  border: 2px solid var(--color-secondary);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+.promo-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.promo-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.promo-icon {
+  color: var(--color-primary);
+  margin: 0 auto 1.5rem;
+}
+
+.promo-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.promo-desc {
+  color: var(--color-text-light);
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.promo-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
