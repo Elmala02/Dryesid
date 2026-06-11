@@ -381,16 +381,20 @@
 
 @media (max-width: 480px) {
   .navbar-container {
-    padding: 0 1rem;
-    gap: 0.5rem;
+    padding: 0 0.75rem;
+    gap: 0.25rem;
   }
 
   .navbar-logo {
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
+    white-space: normal;   /* permit wrapping */
+    max-width: 110px;      /* force wrap to DR. YESID on line 1 and MORENO on line 2 */
+    line-height: 1.15;
+    display: block;
   }
 
   .navbar-actions {
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
 }
