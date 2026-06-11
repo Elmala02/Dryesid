@@ -71,7 +71,7 @@ const Testimonials = () => {
         
         <div className="disclaimer-banner">
           <p>
-            * Todos los casos de antes y después presentados corresponden a pacientes reales tratados por el Dr. Yesid Moreno en Aesthetic Evolution. Los resultados individuales pueden variar según cada paciente.
+            * Todos los casos de antes y después presentados corresponden a pacientes reales tratados por el Dr. Yesid Moreno. Los resultados individuales pueden variar según cada paciente.
           </p>
         </div>
       </section>

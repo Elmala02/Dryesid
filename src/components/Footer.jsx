@@ -7,10 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-container">
         <div className="footer-brand">
-          <div className="footer-logo-container">
-            <img src="/images/logo.png" alt="Aesthetic Evolution Logo" className="footer-logo" style={{ height: '60px', marginBottom: '1rem' }} />
-          </div>
-          <h3>AESTHETIC EVOLUTION</h3>
+          <h3>DR. YESID MORENO</h3>
           <p>Medicina estética avanzada enfocada en resaltar tu belleza natural con seguridad y profesionalismo.</p>
           <div className="social-links">
             <a href="https://www.instagram.com/aesthetic_evolution_bogota/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -42,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Aesthetic Evolution. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Dr. Yesid Moreno. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

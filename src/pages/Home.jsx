@@ -6,11 +6,11 @@ import './Home.css';
 
 const slides = [
   {
-    image: '/images/doctor/_MG_0757.jpg',
+    image: '/images/doctor/_MG_0750.jpg',
     subtitle: 'Medicina Estética de Lujo',
     title: 'Descubre tu mejor versión',
     body: 'Tratamientos estéticos avanzados que realzan tu belleza natural con precisión médica y elegancia sin igual.',
-    position: 'center 20%',
+    position: 'center 15%',
   },
   {
     image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?q=80&w=1974&auto=format&fit=crop',
@@ -20,11 +20,11 @@ const slides = [
     position: 'center',
   },
   {
-    image: '/images/doctor/_MG_0752.jpg',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
     subtitle: 'Ciencia & Arte',
     title: 'Resultados que inspiran confianza',
     body: 'Tecnología de vanguardia combinada con el arte de la medicina estética de alto nivel.',
-    position: 'center 15%',
+    position: 'center',
   },
 ];
 
