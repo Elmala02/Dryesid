@@ -61,7 +61,7 @@ const Home = () => {
           <p className="hero-body">{slides[activeSlide].body}</p>
           <div className="hero-actions">
             <Link to="/contacto" className="btn-primary">Agendar Cita</Link>
-            <Link to="/procedimientos" className="btn-outline hero-btn-outline">Ver Procedimientos</Link>
+            <Link to="/procedimientos" className="btn-gold">Ver Procedimientos</Link>
           </div>
         </div>
         {/* Slide Dots */}
