@@ -20,7 +20,7 @@ const About = () => {
       <section className="about-bio container">
         <div className="bio-grid">
           <div className="bio-image">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" alt="Dr. Yesid Moreno en consulta" />
+            <img src="/images/doctor/_MG_0750.jpg" alt="Dr. Yesid Moreno en consulta" />
           </div>
           <div className="bio-content">
             <h3>Mi Filosofía de Trabajo</h3>

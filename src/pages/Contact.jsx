@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Clock, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
                 <div className="info-icon"><MapPin /></div>
                 <div>
                   <h4>Ubicación</h4>
-                  <p>Calle Falsa 123, Edificio Médico, Cons. 405<br/>Bogotá, Colombia</p>
+                  <p>Bogotá Cll 82 #20-26<br/>Colombia</p>
                 </div>
               </div>
               
@@ -32,15 +32,21 @@ const Contact = () => {
                 <div className="info-icon"><Phone /></div>
                 <div>
                   <h4>Teléfono / WhatsApp</h4>
-                  <p>+57 300 123 4567</p>
+                  <p>+57 322 446 7275</p>
                 </div>
               </div>
               
               <div className="info-item">
-                <div className="info-icon"><Mail /></div>
+                <div className="info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram" style={{ color: 'var(--color-secondary)' }}>
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                </div>
                 <div>
-                  <h4>Email</h4>
-                  <p>contacto@dryesidmoreno.com</p>
+                  <h4>Instagram</h4>
+                  <p><a href="https://www.instagram.com/aesthetic_evolution_bogota/" target="_blank" rel="noopener noreferrer">@aesthetic_evolution_bogota</a></p>
                 </div>
               </div>
               

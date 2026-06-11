@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Scrap and WeTransfer
+clean_content.html
+clean_html.py
+wetransfer_*
+

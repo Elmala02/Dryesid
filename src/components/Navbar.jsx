@@ -31,7 +31,7 @@ const Navbar = () => {
 
           {/* LOGO — izquierda */}
           <Link to="/" className="navbar-logo" onClick={() => setIsOpen(false)}>
-            DR. YESID MORENO
+            <img src="/images/logo.png" alt="Aesthetic Evolution" className="nav-logo-img" style={{ height: '45px', objectFit: 'contain' }} />
           </Link>
 
           {/* LINKS — centro (desktop) */}

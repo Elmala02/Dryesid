@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageSquareQuote } from 'lucide-react';
+import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import './Testimonials.css';
 
 const Testimonials = () => {
@@ -30,6 +31,27 @@ const Testimonials = () => {
         <div className="container">
           <h1>Resultados y Testimonios</h1>
           <p>Experiencias reales de pacientes que confiaron en nosotros.</p>
+        </div>
+      </section>
+
+      {/* Casos Clínicos */}
+      <section className="clinical-cases container">
+        <h2 style={{ textAlign: 'center', marginBottom: '3rem', marginTop: '2rem' }}>Casos de Éxito Reales</h2>
+        <div className="cases-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
+          <div className="case-item">
+            <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem' }}>Caso Clínico 1: Armonización Facial</h3>
+            <BeforeAfterSlider
+              beforeImage="/images/cambio1-before.png"
+              afterImage="/images/cambio1-after.png"
+            />
+          </div>
+          <div className="case-item">
+            <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem' }}>Caso Clínico 2: Definición Estética</h3>
+            <BeforeAfterSlider
+              beforeImage="/images/cambio2-before.png"
+              afterImage="/images/cambio2-after.png"
+            />
+          </div>
         </div>
       </section>
 

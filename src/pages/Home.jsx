@@ -6,7 +6,7 @@ import './Home.css';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop',
+    image: '/images/doctor/_MG_0757.jpg',
     subtitle: 'Medicina Estética de Lujo',
     title: 'Descubre tu mejor versión',
     body: 'Tratamientos estéticos avanzados que realzan tu belleza natural con precisión médica y elegancia sin igual.',
@@ -18,7 +18,7 @@ const slides = [
     body: 'Cada procedimiento es diseñado a medida para respetar y potenciar tus rasgos únicos.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/doctor/_MG_0752.jpg',
     subtitle: 'Ciencia & Arte',
     title: 'Resultados que inspiran confianza',
     body: 'Tecnología de vanguardia combinada con el arte de la medicina estética de alto nivel.',
@@ -87,7 +87,7 @@ const Home = () => {
       <section className="home-about">
         <div className="container home-about-grid">
           <div className="home-about-img">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" alt="Dr. Yesid Moreno" />
+            <img src="/images/doctor/_MG_0746.jpg" alt="Dr. Yesid Moreno" />
             <div className="about-img-badge">
               <Star fill="#C6A56A" size={14} />
               <span>Especialista Certificado</span>
@@ -117,8 +117,8 @@ const Home = () => {
           </div>
           <p className="ba-instruction">Arrastra el control central para comparar el resultado</p>
           <BeforeAfterSlider
-            beforeImage="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1974&auto=format&fit=crop"
-            afterImage="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1974&auto=format&fit=crop"
+            beforeImage="/images/cambio1-before.png"
+            afterImage="/images/cambio1-after.png"
           />
           <p className="ba-disclaimer">* Imágenes con fines ilustrativos. Los casos clínicos reales están disponibles en consulta previa autorización del paciente.</p>
         </div>
