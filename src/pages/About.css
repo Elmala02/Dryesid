@@ -38,6 +38,7 @@
   border-radius: 8px;
   box-shadow: var(--shadow-lg);
   object-fit: cover;
+  object-position: center 20%; /* Keep face visible */
   width: 100%;
   height: 500px;
 }

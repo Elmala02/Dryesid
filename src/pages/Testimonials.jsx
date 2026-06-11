@@ -71,9 +71,7 @@ const Testimonials = () => {
         
         <div className="disclaimer-banner">
           <p>
-            * Los resultados pueden variar de un paciente a otro. Todas las imágenes de casos de éxito clínico
-            antes/después se encuentran disponibles en consulta física para garantizar la privacidad y cumplimiento
-            normativo.
+            * Todos los casos de antes y después presentados corresponden a pacientes reales tratados por el Dr. Yesid Moreno en Aesthetic Evolution. Los resultados individuales pueden variar según cada paciente.
           </p>
         </div>
       </section>

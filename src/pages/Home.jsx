@@ -10,18 +10,21 @@ const slides = [
     subtitle: 'Medicina Estética de Lujo',
     title: 'Descubre tu mejor versión',
     body: 'Tratamientos estéticos avanzados que realzan tu belleza natural con precisión médica y elegancia sin igual.',
+    position: 'center 20%',
   },
   {
     image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?q=80&w=1974&auto=format&fit=crop',
     subtitle: 'Armonización Facial',
     title: 'Belleza que te pertenece',
     body: 'Cada procedimiento es diseñado a medida para respetar y potenciar tus rasgos únicos.',
+    position: 'center',
   },
   {
     image: '/images/doctor/_MG_0752.jpg',
     subtitle: 'Ciencia & Arte',
     title: 'Resultados que inspiran confianza',
     body: 'Tecnología de vanguardia combinada con el arte de la medicina estética de alto nivel.',
+    position: 'center 15%',
   },
 ];
 
@@ -48,7 +51,7 @@ const Home = () => {
       <section className="hero-section">
         {slides.map((slide, i) => (
           <div key={i} className={`hero-slide ${i === activeSlide ? 'active' : ''}`}
-               style={{ backgroundImage: `url(${slide.image})` }}>
+               style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: slide.position || 'center' }}>
             <div className="hero-overlay" />
           </div>
         ))}
@@ -120,7 +123,7 @@ const Home = () => {
             beforeImage="/images/cambio1-before.png"
             afterImage="/images/cambio1-after.png"
           />
-          <p className="ba-disclaimer">* Imágenes con fines ilustrativos. Los casos clínicos reales están disponibles en consulta previa autorización del paciente.</p>
+          <p className="ba-disclaimer">* Todos los casos presentados corresponden a pacientes reales tratados por el Dr. Yesid Moreno en la clínica. Resultados individuales pueden variar.</p>
         </div>
       </section>
 
