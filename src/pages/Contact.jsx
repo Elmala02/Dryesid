@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Clock, Send, Mail } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
                 <div className="info-icon"><MapPin /></div>
                 <div>
                   <h4>Ubicación</h4>
-                  <p>Bogotá Cll 82 #20-26<br/>Colombia</p>
+                  <p>Bogotá, Colombia</p>
                 </div>
               </div>
               
@@ -32,7 +32,15 @@ const Contact = () => {
                 <div className="info-icon"><Phone /></div>
                 <div>
                   <h4>Teléfono / WhatsApp</h4>
-                  <p>+57 322 446 7275</p>
+                  <p>+57 323 769 0957</p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <div className="info-icon"><Mail /></div>
+                <div>
+                  <h4>Correo Electrónico</h4>
+                  <p><a href="mailto:dr.yesidmoreno@gmail.com">dr.yesidmoreno@gmail.com</a></p>
                 </div>
               </div>
               
@@ -46,7 +54,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Instagram</h4>
-                  <p><a href="https://www.instagram.com/aesthetic_evolution_bogota/" target="_blank" rel="noopener noreferrer">@aesthetic_evolution_bogota</a></p>
+                  <p><a href="https://www.instagram.com/dr.yesidmoreno?igsh=cTdmdHJ1dzc5b3Zr&utm_source=qr" target="_blank" rel="noopener noreferrer">@dr.yesidmoreno</a></p>
                 </div>
               </div>
               

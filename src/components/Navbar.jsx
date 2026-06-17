@@ -21,7 +21,7 @@ const Navbar = () => {
       .map(item => `- ${item.title} (${item.quantity}x) - $${(item.price * item.quantity).toLocaleString()}`)
       .join('\n');
     const msg = `Hola Dr. Yesid Moreno, me gustaría agendar una cita para los siguientes tratamientos:\n\n${itemsText}\n\nTotal estimado: $${cartTotal.toLocaleString()}\n\nPor favor contáctenme para coordinar fecha y hora.`;
-    window.open(`https://wa.me/573224467275?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/573237690957?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

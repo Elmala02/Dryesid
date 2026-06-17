@@ -129,7 +129,7 @@ const LuckyWheel = () => {
   const handleClaim = () => {
     if (!prize) return;
     const msg = `Hola Dr. Yesid Moreno! Giré la ruleta en su web y gané el premio: "${prize.text}". Quisiera agendar mi valoración.`;
-    window.open(`https://wa.me/573224467275?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/573237690957?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

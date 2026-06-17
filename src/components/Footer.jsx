@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           <h3>DR. YESID MORENO</h3>
           <p>Medicina estética avanzada enfocada en resaltar tu belleza natural con seguridad y profesionalismo.</p>
           <div className="social-links">
-            <a href="https://www.instagram.com/aesthetic_evolution_bogota/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/dr.yesidmoreno?igsh=cTdmdHJ1dzc5b3Zr&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
@@ -33,8 +33,9 @@ const Footer = () => {
         <div className="footer-contact">
           <h4>Contacto</h4>
           <ul>
-            <li><MapPin size={18} /> <span>Bogotá Cll 82 #20-26</span></li>
-            <li><Phone size={18} /> <span>+57 322 446 7275</span></li>
+            <li><MapPin size={18} /> <span>Bogotá, Colombia</span></li>
+            <li><Phone size={18} /> <span>+57 323 769 0957</span></li>
+            <li><Mail size={18} /> <span><a href="mailto:dr.yesidmoreno@gmail.com">dr.yesidmoreno@gmail.com</a></span></li>
           </ul>
         </div>
       </div>
