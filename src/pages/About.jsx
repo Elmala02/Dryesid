@@ -1,5 +1,13 @@
 import React from 'react';
-import { Award, GraduationCap, Star } from 'lucide-react';
+import { Award, GraduationCap, Star, Play } from 'lucide-react';
+
+const InstagramIcon = ({ size = 24, className = "" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
 import './About.css';
 
 const About = () => {
@@ -56,6 +64,47 @@ const About = () => {
             <Star className="credential-icon" size={40} />
             <h4>Reconocimientos</h4>
             <p>Reconocido por su excelencia técnica y trato humano, destacando en armonización facial.</p>
+          </div>
+        </div>
+      </section>
+    {/* Instagram Videos Section */}
+      <section className="about-instagram">
+        <div className="container">
+          <div className="instagram-header">
+            <InstagramIcon size={48} className="instagram-icon-main" />
+            <h2>Conoce más en Instagram</h2>
+            <p>Descubre casos reales, testimonios y el día a día en nuestro consultorio.</p>
+          </div>
+          <div className="instagram-video-grid">
+            {[
+              'https://www.instagram.com/p/DVRWe42ERvW/',
+              'https://www.instagram.com/p/DX7axcJxdXM/',
+              'https://www.instagram.com/p/DYDu0VxjYfP/'
+            ].map((url, i) => (
+              <div key={i} className="instagram-embed-card">
+                <iframe 
+                  src={`${url}embed/`}
+                  width="100%"
+                  height="540"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowFullScreen
+                  style={{ border: 'none', backgroundColor: 'white' }}
+                ></iframe>
+              </div>
+            ))}
+          </div>
+          <div className="instagram-action text-center">
+            <a 
+              href="https://www.instagram.com/dr.yesidmoreno?igsh=cTdmdHJ1dzc5b3Zr&utm_source=qr" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-outline"
+            >
+              Seguir a @dr.yesidmoreno
+            </a>
           </div>
         </div>
       </section>
