@@ -118,11 +118,25 @@ const Home = () => {
             <p>Casos de éxito</p>
             <h2>Antes &amp; Después</h2>
           </div>
-          <p className="ba-instruction">Arrastra el control central para comparar el resultado</p>
-          <BeforeAfterSlider
-            beforeImage="/images/cambio1-before.png"
-            afterImage="/images/cambio1-after.png"
-          />
+          <p className="ba-instruction" style={{ textAlign: 'center', marginBottom: '2rem' }}>Arrastra el control central para comparar el resultado</p>
+          
+          <div className="cases-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', marginBottom: '2rem' }}>
+            <div className="case-item">
+              <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem', color: 'var(--color-primary)' }}>Armonización Facial</h3>
+              <BeforeAfterSlider
+                beforeImage="/images/cambio1-before.png"
+                afterImage="/images/cambio1-after.png"
+              />
+            </div>
+            <div className="case-item">
+              <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem', color: 'var(--color-primary)' }}>Rinomodelación</h3>
+              <BeforeAfterSlider
+                beforeImage="/images/cambio-de-cara-2-antes.png"
+                afterImage="/images/cambio-de-cara-2-despues.png"
+              />
+            </div>
+          </div>
+
           <p className="ba-disclaimer">* Todos los casos presentados corresponden a pacientes reales tratados por el Dr. Yesid Moreno en la clínica. Resultados individuales pueden variar.</p>
         </div>
       </section>

@@ -61,7 +61,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage, beforeLabel = "Antes", aft
       {/* Before image (foreground overlay) */}
       <div 
         className="ba-image before-image" 
-        style={{ width: `${sliderPosition}%` }}
+        style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
       >
         <img src={beforeImage} alt="Antes" />
         <span className="ba-label label-before">{beforeLabel}</span>

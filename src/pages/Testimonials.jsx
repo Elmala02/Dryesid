@@ -46,10 +46,10 @@ const Testimonials = () => {
             />
           </div>
           <div className="case-item">
-            <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem' }}>Caso Clínico 2: Definición Estética</h3>
+            <h3 style={{ fontSize: '1.4rem', textAlign: 'center', marginBottom: '1rem' }}>Caso Clínico 2: Rinomodelación</h3>
             <BeforeAfterSlider
-              beforeImage="/images/cambio2-before.png"
-              afterImage="/images/cambio2-after.png"
+              beforeImage="/images/cambio-de-cara-2-antes.png"
+              afterImage="/images/cambio-de-cara-2-despues.png"
             />
           </div>
         </div>
